@@ -1,3 +1,28 @@
+.navbar {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: goldenrod;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: goldenrod;
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
 
 /* -----------------
 fonts 
@@ -73,6 +98,8 @@ h5,
 h6{
     font-weight: 500;
     color: var(--white);
+    text-align: justify;
+    text-transform: none;
 }
 p{
     font-size: 16px;
@@ -342,7 +369,7 @@ section{
    top:0;
    height: 100%;
    width: 100%;
-   background-image: url('../img/Contrato-de-Manutencao.jpg');
+   background-image: url('../img/img-banner.png');
    background-attachment: fixed;
    background-size: cover;
    background-position: center;
@@ -367,8 +394,13 @@ section{
 }
 .home-text p{
     margin:0 0 30px;
+    
 }
 
+.home-text a:hover{
+    color: black;
+    font-weight: bold;
+}
 
 /* --------------------
  about section 
@@ -388,6 +420,7 @@ section{
 }
 .about-text p{
     margin:0 0 15px;
+    text-align: justify;
 }
 .about-text .btn{
     margin: 15px 0 0;
@@ -397,43 +430,17 @@ section{
     border-radius: 10px;
     opacity: 1;
     transition: 700ms ;
+ 
+   
+
 }
 
-.img-sobre:hover{
-    opacity: 0.5;
-}
 
-h3{
-    transition: none;
-}
 
 .about-img .img-box{
     position: relative;
 }
-.about-img .img-box::before{
-    content: '';
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    border:3px solid var(--main-color);
-    left:calc(50% - 50px);
-    top:calc(50% - 50px);
-    animation: spin01 10s linear infinite;
-}
-.about-img .img-box h3{
-    position: absolute;
-    left: 50%;
-    top:50%;
-    width: 100%;
-    max-width: 250px;
-    text-align: center;
-    transform: translate(-50%,-50%);
-    font-size: 30px;
-    font-family: var(--cursive-font);
-    color: white;
-    font-weight: bold;
-    text-transform: capitalize;
-}
+
 
 
 /* -----------------
