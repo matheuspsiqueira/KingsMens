@@ -413,7 +413,7 @@ h6 {
 #hero {
   width: 100%;
   height: calc(100vh - 110px);
-  background: url("/assets/img/home.jpg") top center;
+  background: url("https://uploaddeimagens.com.br/images/004/580/014/original/home.jpg?1692308870") top center;
   background-size: cover;
   position: relative;
 }
